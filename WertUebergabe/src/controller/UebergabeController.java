@@ -35,9 +35,12 @@ public class UebergabeController {
 	
 	class DatenUebergabeListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			String vorname = String.valueOf(_model.getName()); 
+		
+
+                           String vorname = String.valueOf(_view.getVorname());
+        	                  String.valueOf(_model.setName(vorname)) = vorname; 
 			
-			_view2.setName(String.valueOf(_view2.getEingabe())); 
+//			_view2.setName(String.valueOf(_view2.getEingabe())); 
 		}
 	}
 	
